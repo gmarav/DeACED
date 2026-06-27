@@ -1,8 +1,9 @@
 # DeACED
 
 [![CI](https://github.com/gmarav/DeACED/actions/workflows/ci.yml/badge.svg)](https://github.com/gmarav/DeACED/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/deaced)](https://pypi.org/project/deaced/)
+[![Python versions](https://img.shields.io/pypi/pyversions/deaced)](https://pypi.org/project/deaced/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-![Python](https://img.shields.io/badge/python-3.10%E2%80%933.14-blue)
 
 > Dump and inspect **Java Object Serialization** (`0xAC 0xED`) streams — and Java RMI
 > packet contents — in a clear, human-readable, hierarchical form.
@@ -15,7 +16,7 @@ with several correctness fixes (see [NOTICE](NOTICE)).
 ## Install
 
 ```bash
-pip install deaced            # once published
+pip install deaced
 # or from source:
 pip install .
 ```
