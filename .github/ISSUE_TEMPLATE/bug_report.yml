@@ -1,0 +1,33 @@
+name: Bug report
+description: Incorrect output, a crash, or a parse error on a valid stream
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did DeACED do, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: Input bytes (hex)
+      description: >-
+        The offending stream as hex (e.g. the argument to `deaced -x ...`),
+        minimised if you can. Omit anything sensitive.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Actual output / traceback
+      render: text
+  - type: input
+    id: versions
+    attributes:
+      label: DeACED version and Python version
+      placeholder: "deaced 0.1.0, Python 3.12"
+    validations:
+      required: true

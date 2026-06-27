@@ -1,0 +1,134 @@
+
+STREAM_MAGIC - 0xac ed
+STREAM_VERSION - 0x00 05
+Contents
+  TC_OBJECT - 0x73
+    TC_CLASSDESC - 0x72
+      className
+        Length - 6 - 0x00 06
+        Value - Floats - 0x466c6f617473
+      serialVersionUID - 0x00 00 00 00 00 00 00 01
+      newHandle 0x00 7e 00 00
+      classDescFlags - 0x02 - SC_SERIALIZABLE
+      fieldCount - 2 - 0x00 02
+      Fields
+        0:
+          Array - [ - 0x5b
+          fieldName
+            Length - 7 - 0x00 07
+            Value - doubles - 0x646f75626c6573
+          className1
+            TC_STRING - 0x74
+              newHandle 0x00 7e 00 01
+              Length - 2 - 0x00 02
+              Value - [D - 0x5b44
+        1:
+          Array - [ - 0x5b
+          fieldName
+            Length - 6 - 0x00 06
+            Value - floats - 0x666c6f617473
+          className1
+            TC_STRING - 0x74
+              newHandle 0x00 7e 00 02
+              Length - 2 - 0x00 02
+              Value - [F - 0x5b46
+      classAnnotations
+        TC_ENDBLOCKDATA - 0x78
+      superClassDesc
+        TC_NULL - 0x70
+    newHandle 0x00 7e 00 03
+    classdata
+      CLASS Floats
+        values
+          FIELD doubles
+            (array)
+              TC_ARRAY - 0x75
+                TC_CLASSDESC - 0x72
+                  className
+                    Length - 2 - 0x00 02
+                    Value - [D - 0x5b44
+                  serialVersionUID - 0x3e a6 8c 14 ab 63 5a 1e
+                  newHandle 0x00 7e 00 04
+                  classDescFlags - 0x02 - SC_SERIALIZABLE
+                  fieldCount - 0 - 0x00 00
+                  classAnnotations
+                    TC_ENDBLOCKDATA - 0x78
+                  superClassDesc
+                    TC_NULL - 0x70
+                newHandle 0x00 7e 00 05
+                Array size - 17 - 0x00 00 00 11
+                Values
+                  Index 0:
+                    (double)0.0 - 0x00 00 00 00 00 00 00 00
+                  Index 1:
+                    (double)-0.0 - 0x80 00 00 00 00 00 00 00
+                  Index 2:
+                    (double)1.0 - 0x3f f0 00 00 00 00 00 00
+                  Index 3:
+                    (double)2.5 - 0x40 04 00 00 00 00 00 00
+                  Index 4:
+                    (double)123.45 - 0x40 5e dc cc cc cc cc cd
+                  Index 5:
+                    (double)1000000.0 - 0x41 2e 84 80 00 00 00 00
+                  Index 6:
+                    (double)1.0E7 - 0x41 63 12 d0 00 00 00 00
+                  Index 7:
+                    (double)0.001 - 0x3f 50 62 4d d2 f1 a9 fc
+                  Index 8:
+                    (double)1.0E-4 - 0x3f 1a 36 e2 eb 1c 43 2d
+                  Index 9:
+                    (double)1.0E20 - 0x44 15 af 1d 78 b5 8c 40
+                  Index 10:
+                    (double)1.5E-10 - 0x3d e4 9d a7 e3 61 ce 4c
+                  Index 11:
+                    (double)0.3333333333333333 - 0x3f d5 55 55 55 55 55 55
+                  Index 12:
+                    (double)0.1 - 0x3f b9 99 99 99 99 99 9a
+                  Index 13:
+                    (double)1.7976931348623157E308 - 0x7f ef ff ff ff ff ff ff
+                  Index 14:
+                    (double)NaN - 0x7f f8 00 00 00 00 00 00
+                  Index 15:
+                    (double)Infinity - 0x7f f0 00 00 00 00 00 00
+                  Index 16:
+                    (double)-Infinity - 0xff f0 00 00 00 00 00 00
+          FIELD floats
+            (array)
+              TC_ARRAY - 0x75
+                TC_CLASSDESC - 0x72
+                  className
+                    Length - 2 - 0x00 02
+                    Value - [F - 0x5b46
+                  serialVersionUID - 0x0b 9c 81 89 22 e0 0c 42
+                  newHandle 0x00 7e 00 06
+                  classDescFlags - 0x02 - SC_SERIALIZABLE
+                  fieldCount - 0 - 0x00 00
+                  classAnnotations
+                    TC_ENDBLOCKDATA - 0x78
+                  superClassDesc
+                    TC_NULL - 0x70
+                newHandle 0x00 7e 00 07
+                Array size - 11 - 0x00 00 00 0b
+                Values
+                  Index 0:
+                    (float)0.0 - 0x00 00 00 00
+                  Index 1:
+                    (float)-0.0 - 0x80 00 00 00
+                  Index 2:
+                    (float)1.0 - 0x3f 80 00 00
+                  Index 3:
+                    (float)0.1 - 0x3d cc cc cd
+                  Index 4:
+                    (float)1.0E8 - 0x4c be bc 20
+                  Index 5:
+                    (float)1.0E-5 - 0x37 27 c5 ac
+                  Index 6:
+                    (float)0.33333334 - 0x3e aa aa ab
+                  Index 7:
+                    (float)3.4028235E38 - 0x7f 7f ff ff
+                  Index 8:
+                    (float)NaN - 0x7f c0 00 00
+                  Index 9:
+                    (float)Infinity - 0x7f 80 00 00
+                  Index 10:
+                    (float)-Infinity - 0xff 80 00 00

@@ -1,0 +1,11 @@
+# Source distribution contents. The wheel ships only the package (src/deaced);
+# the sdist additionally carries the tests + their fixtures and the dev tools so
+# it is self-contained and auditable, and `pytest` works from an unpacked sdist.
+include LICENSE
+include NOTICE
+include README.md
+include CHANGELOG.md
+include CONTRIBUTING.md
+recursive-include tests *.py
+recursive-include tests/data *.ser *.golden
+recursive-include tools *.java *.sh *.md

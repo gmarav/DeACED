@@ -1,0 +1,94 @@
+
+STREAM_MAGIC - 0xac ed
+STREAM_VERSION - 0x00 05
+Contents
+  TC_OBJECT - 0x73
+    TC_CLASSDESC - 0x72
+      className
+        Length - 5 - 0x00 05
+        Value - Prims - 0x5072696d73
+      serialVersionUID - 0x00 00 00 00 00 00 00 01
+      newHandle 0x00 7e 00 00
+      classDescFlags - 0x02 - SC_SERIALIZABLE
+      fieldCount - 9 - 0x00 09
+      Fields
+        0:
+          Byte - B - 0x42
+          fieldName
+            Length - 1 - 0x00 01
+            Value - b - 0x62
+        1:
+          Char - C - 0x43
+          fieldName
+            Length - 1 - 0x00 01
+            Value - c - 0x63
+        2:
+          Double - D - 0x44
+          fieldName
+            Length - 1 - 0x00 01
+            Value - d - 0x64
+        3:
+          Float - F - 0x46
+          fieldName
+            Length - 1 - 0x00 01
+            Value - f - 0x66
+        4:
+          Boolean - Z - 0x5a
+          fieldName
+            Length - 4 - 0x00 04
+            Value - flag - 0x666c6167
+        5:
+          Int - I - 0x49
+          fieldName
+            Length - 1 - 0x00 01
+            Value - i - 0x69
+        6:
+          Long - J - 0x4a
+          fieldName
+            Length - 1 - 0x00 01
+            Value - l - 0x6c
+        7:
+          Short - S - 0x53
+          fieldName
+            Length - 1 - 0x00 01
+            Value - s - 0x73
+        8:
+          Object - L - 0x4c
+          fieldName
+            Length - 4 - 0x00 04
+            Value - name - 0x6e616d65
+          className1
+            TC_STRING - 0x74
+              newHandle 0x00 7e 00 01
+              Length - 18 - 0x00 12
+              Value - Ljava/lang/String; - 0x4c6a6176612f6c616e672f537472696e673b
+      classAnnotations
+        TC_ENDBLOCKDATA - 0x78
+      superClassDesc
+        TC_NULL - 0x70
+    newHandle 0x00 7e 00 02
+    classdata
+      CLASS Prims
+        values
+          FIELD b
+            (byte)-5 - 0xfb
+          FIELD c
+            (char)Q - 0x00 51
+          FIELD d
+            (double)123.45 - 0x40 5e dc cc cc cc cc cd
+          FIELD f
+            (float)1.5 - 0x3f c0 00 00
+          FIELD flag
+            (boolean)true - 0x01
+          FIELD i
+            (int)1000000 - 0x00 0f 42 40
+          FIELD l
+            (long)-1 - 0xff ff ff ff ff ff ff ff
+          FIELD s
+            (short)-2 - 0xff fe
+          FIELD name
+            (object)
+              TC_STRING - 0x74
+                newHandle 0x00 7e 00 03
+                Length - 5 - 0x00 05
+                Value - hello - 0x68656c6c6f

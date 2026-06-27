@@ -1,0 +1,42 @@
+
+STREAM_MAGIC - 0xac ed
+STREAM_VERSION - 0x00 05
+Contents
+  TC_OBJECT - 0x73
+    TC_CLASSDESC - 0x72
+      className
+        Length - 19 - 0x00 13
+        Value - java.util.ArrayList - 0x6a6176612e7574696c2e41727261794c697374
+      serialVersionUID - 0x78 81 d2 1d 99 c7 61 9d
+      newHandle 0x00 7e 00 00
+      classDescFlags - 0x03 - SC_WRITE_METHOD | SC_SERIALIZABLE
+      fieldCount - 1 - 0x00 01
+      Fields
+        0:
+          Int - I - 0x49
+          fieldName
+            Length - 4 - 0x00 04
+            Value - size - 0x73697a65
+      classAnnotations
+        TC_ENDBLOCKDATA - 0x78
+      superClassDesc
+        TC_NULL - 0x70
+    newHandle 0x00 7e 00 01
+    classdata
+      CLASS java.util.ArrayList
+        values
+          FIELD size
+            (int)2 - 0x00 00 00 02
+        objectAnnotation
+          TC_BLOCKDATA - 0x77
+            Length - 4 - 0x04
+            Contents - 0x00000002
+          TC_STRING - 0x74
+            newHandle 0x00 7e 00 02
+            Length - 1 - 0x00 01
+            Value - x - 0x78
+          TC_STRING - 0x74
+            newHandle 0x00 7e 00 03
+            Length - 1 - 0x00 01
+            Value - y - 0x79
+          TC_ENDBLOCKDATA - 0x78

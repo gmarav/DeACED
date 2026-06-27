@@ -1,0 +1,5 @@
+# Serialized fixtures are binary -- never apply newline conversion.
+*.ser binary
+
+# Golden dumps are compared byte-for-byte; keep them LF on every platform.
+*.golden text eol=lf

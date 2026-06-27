@@ -1,0 +1,212 @@
+
+STREAM_MAGIC - 0xac ed
+STREAM_VERSION - 0x00 05
+Contents
+  TC_OBJECT - 0x73
+    TC_CLASSDESC - 0x72
+      className
+        Length - 10 - 0x00 0a
+        Value - PrimArrays - 0x5072696d417272617973
+      serialVersionUID - 0x00 00 00 00 00 00 00 01
+      newHandle 0x00 7e 00 00
+      classDescFlags - 0x02 - SC_SERIALIZABLE
+      fieldCount - 6 - 0x00 06
+      Fields
+        0:
+          Array - [ - 0x5b
+          fieldName
+            Length - 5 - 0x00 05
+            Value - bools - 0x626f6f6c73
+          className1
+            TC_STRING - 0x74
+              newHandle 0x00 7e 00 01
+              Length - 2 - 0x00 02
+              Value - [Z - 0x5b5a
+        1:
+          Array - [ - 0x5b
+          fieldName
+            Length - 5 - 0x00 05
+            Value - chars - 0x6368617273
+          className1
+            TC_STRING - 0x74
+              newHandle 0x00 7e 00 02
+              Length - 2 - 0x00 02
+              Value - [C - 0x5b43
+        2:
+          Array - [ - 0x5b
+          fieldName
+            Length - 7 - 0x00 07
+            Value - doubles - 0x646f75626c6573
+          className1
+            TC_STRING - 0x74
+              newHandle 0x00 7e 00 03
+              Length - 2 - 0x00 02
+              Value - [D - 0x5b44
+        3:
+          Array - [ - 0x5b
+          fieldName
+            Length - 6 - 0x00 06
+            Value - floats - 0x666c6f617473
+          className1
+            TC_STRING - 0x74
+              newHandle 0x00 7e 00 04
+              Length - 2 - 0x00 02
+              Value - [F - 0x5b46
+        4:
+          Array - [ - 0x5b
+          fieldName
+            Length - 5 - 0x00 05
+            Value - longs - 0x6c6f6e6773
+          className1
+            TC_STRING - 0x74
+              newHandle 0x00 7e 00 05
+              Length - 2 - 0x00 02
+              Value - [J - 0x5b4a
+        5:
+          Array - [ - 0x5b
+          fieldName
+            Length - 6 - 0x00 06
+            Value - shorts - 0x73686f727473
+          className1
+            TC_STRING - 0x74
+              newHandle 0x00 7e 00 06
+              Length - 2 - 0x00 02
+              Value - [S - 0x5b53
+      classAnnotations
+        TC_ENDBLOCKDATA - 0x78
+      superClassDesc
+        TC_NULL - 0x70
+    newHandle 0x00 7e 00 07
+    classdata
+      CLASS PrimArrays
+        values
+          FIELD bools
+            (array)
+              TC_ARRAY - 0x75
+                TC_CLASSDESC - 0x72
+                  className
+                    Length - 2 - 0x00 02
+                    Value - [Z - 0x5b5a
+                  serialVersionUID - 0x57 8f 20 39 14 b8 5d e2
+                  newHandle 0x00 7e 00 08
+                  classDescFlags - 0x02 - SC_SERIALIZABLE
+                  fieldCount - 0 - 0x00 00
+                  classAnnotations
+                    TC_ENDBLOCKDATA - 0x78
+                  superClassDesc
+                    TC_NULL - 0x70
+                newHandle 0x00 7e 00 09
+                Array size - 2 - 0x00 00 00 02
+                Values
+                  Index 0:
+                    (boolean)true - 0x01
+                  Index 1:
+                    (boolean)false - 0x00
+          FIELD chars
+            (array)
+              TC_ARRAY - 0x75
+                TC_CLASSDESC - 0x72
+                  className
+                    Length - 2 - 0x00 02
+                    Value - [C - 0x5b43
+                  serialVersionUID - 0xb0 26 66 b0 e2 5d 84 ac
+                  newHandle 0x00 7e 00 0a
+                  classDescFlags - 0x02 - SC_SERIALIZABLE
+                  fieldCount - 0 - 0x00 00
+                  classAnnotations
+                    TC_ENDBLOCKDATA - 0x78
+                  superClassDesc
+                    TC_NULL - 0x70
+                newHandle 0x00 7e 00 0b
+                Array size - 2 - 0x00 00 00 02
+                Values
+                  Index 0:
+                    (char)A - 0x00 41
+                  Index 1:
+                    (char)B - 0x00 42
+          FIELD doubles
+            (array)
+              TC_ARRAY - 0x75
+                TC_CLASSDESC - 0x72
+                  className
+                    Length - 2 - 0x00 02
+                    Value - [D - 0x5b44
+                  serialVersionUID - 0x3e a6 8c 14 ab 63 5a 1e
+                  newHandle 0x00 7e 00 0c
+                  classDescFlags - 0x02 - SC_SERIALIZABLE
+                  fieldCount - 0 - 0x00 00
+                  classAnnotations
+                    TC_ENDBLOCKDATA - 0x78
+                  superClassDesc
+                    TC_NULL - 0x70
+                newHandle 0x00 7e 00 0d
+                Array size - 2 - 0x00 00 00 02
+                Values
+                  Index 0:
+                    (double)1.5 - 0x3f f8 00 00 00 00 00 00
+                  Index 1:
+                    (double)2.5 - 0x40 04 00 00 00 00 00 00
+          FIELD floats
+            (array)
+              TC_ARRAY - 0x75
+                TC_CLASSDESC - 0x72
+                  className
+                    Length - 2 - 0x00 02
+                    Value - [F - 0x5b46
+                  serialVersionUID - 0x0b 9c 81 89 22 e0 0c 42
+                  newHandle 0x00 7e 00 0e
+                  classDescFlags - 0x02 - SC_SERIALIZABLE
+                  fieldCount - 0 - 0x00 00
+                  classAnnotations
+                    TC_ENDBLOCKDATA - 0x78
+                  superClassDesc
+                    TC_NULL - 0x70
+                newHandle 0x00 7e 00 0f
+                Array size - 1 - 0x00 00 00 01
+                Values
+                  Index 0:
+                    (float)1.5 - 0x3f c0 00 00
+          FIELD longs
+            (array)
+              TC_ARRAY - 0x75
+                TC_CLASSDESC - 0x72
+                  className
+                    Length - 2 - 0x00 02
+                    Value - [J - 0x5b4a
+                  serialVersionUID - 0x78 20 04 b5 12 b1 75 93
+                  newHandle 0x00 7e 00 10
+                  classDescFlags - 0x02 - SC_SERIALIZABLE
+                  fieldCount - 0 - 0x00 00
+                  classAnnotations
+                    TC_ENDBLOCKDATA - 0x78
+                  superClassDesc
+                    TC_NULL - 0x70
+                newHandle 0x00 7e 00 11
+                Array size - 2 - 0x00 00 00 02
+                Values
+                  Index 0:
+                    (long)1 - 0x00 00 00 00 00 00 00 01
+                  Index 1:
+                    (long)-1 - 0xff ff ff ff ff ff ff ff
+          FIELD shorts
+            (array)
+              TC_ARRAY - 0x75
+                TC_CLASSDESC - 0x72
+                  className
+                    Length - 2 - 0x00 02
+                    Value - [S - 0x5b53
+                  serialVersionUID - 0xef 83 2e 06 e5 5d b0 fa
+                  newHandle 0x00 7e 00 12
+                  classDescFlags - 0x02 - SC_SERIALIZABLE
+                  fieldCount - 0 - 0x00 00
+                  classAnnotations
+                    TC_ENDBLOCKDATA - 0x78
+                  superClassDesc
+                    TC_NULL - 0x70
+                newHandle 0x00 7e 00 13
+                Array size - 2 - 0x00 00 00 02
+                Values
+                  Index 0:
+                    (short)1 - 0x00 01
+                  Index 1:
+                    (short)-1 - 0xff ff

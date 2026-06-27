@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use DeACED in your work, please cite it as below."
+title: DeACED
+abstract: >-
+  A dependency-free Python library and CLI to dump and inspect Java Object
+  Serialization (0xAC 0xED) streams and Java RMI packet contents in a clear,
+  hierarchical form. A port of SerializationDumper with correctness fixes.
+type: software
+authors:
+  - given-names: Alexander
+    family-names: Gmar
+repository-code: "https://github.com/gmarav/DeACED"
+url: "https://github.com/gmarav/DeACED"
+license: MIT
+version: 0.1.0
+keywords:
+  - java
+  - serialization
+  - deserialization
+  - security
+  - rmi

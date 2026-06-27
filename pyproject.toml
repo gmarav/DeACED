@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deaced"
+version = "0.1.0"
+description = "Dump and inspect Java Object Serialization (0xAC 0xED) streams and RMI packets in human-readable form."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "Alexander Gmar" }]
+keywords = ["java", "serialization", "deserialization", "rmi", "security", "aced", "dump"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Environment :: Console",
+    "Topic :: Security",
+    "Topic :: Software Development :: Disassemblers",
+    "Topic :: Utilities",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+
+[project.urls]
+Homepage = "https://github.com/gmarav/DeACED"
+Repository = "https://github.com/gmarav/DeACED"
+Documentation = "https://github.com/gmarav/DeACED#readme"
+Issues = "https://github.com/gmarav/DeACED/issues"
+Changelog = "https://github.com/gmarav/DeACED/blob/main/CHANGELOG.md"
+
+[project.scripts]
+deaced = "deaced.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "pytest-cov>=4", "ruff>=0.4", "mypy>=1.8", "build>=1", "twine>=5", "pre-commit>=3"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+deaced = ["py.typed"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+files = ["src/deaced"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.coverage.run]
+source = ["deaced"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 90

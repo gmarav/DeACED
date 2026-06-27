@@ -1,0 +1,18 @@
+
+STREAM_MAGIC - 0xac ed
+STREAM_VERSION - 0x00 05
+Contents
+  TC_CLASS - 0x76
+    TC_CLASSDESC - 0x72
+      className
+        Length - 16 - 0x00 10
+        Value - java.lang.String - 0x6a6176612e6c616e672e537472696e67
+      serialVersionUID - 0xa0 f0 a4 38 7a 3b b3 42
+      newHandle 0x00 7e 00 00
+      classDescFlags - 0x02 - SC_SERIALIZABLE
+      fieldCount - 0 - 0x00 00
+      classAnnotations
+        TC_ENDBLOCKDATA - 0x78
+      superClassDesc
+        TC_NULL - 0x70
+  newHandle 0x00 7e 00 01

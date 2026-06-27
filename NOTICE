@@ -1,0 +1,43 @@
+DeACED
+======
+
+DeACED is a Python port of SerializationDumper by Nicky Bloor.
+
+  Original work: SerializationDumper
+  Author:        Nicky Bloor (@NickstaDB)
+  Source:        https://github.com/NickstaDB/SerializationDumper
+  License:       MIT (Copyright (c) 2017 Nicky Bloor)
+
+  Python port:   Alexander Gmar (https://github.com/gmarav/DeACED)
+  Port license:  MIT (Copyright (c) 2026 Alexander Gmar)
+
+The output format (the text dump) mirrors the original so existing dumps remain
+comparable. This port additionally fixes and extends the original:
+
+  * (long)/(double) fields: the original shifts byte operands as 32-bit ints
+    (b1 << 56 == b1 << 24) and sign-extends int masks, so 0xFFFFFFFFFFFFFFFF
+    was read as -4294967297 instead of -1 and some doubles were corrupted.
+    DeACED widens each byte to long before shifting (correct values).
+  * TC_LONGSTRING (0x7c) accepted as an object-field value.
+  * TC_BLOCKDATA (0x77) / TC_BLOCKDATALONG (0x7a) accepted as array-field values.
+  * Strings decoded as Java modified UTF-8 (the encoding serialization actually
+    uses): U+0000 as C0 80 and supplementary characters as surrogate pairs are
+    decoded correctly. The original decoded byte-by-byte, corrupting non-ASCII.
+  * TC_RESET (0x79) and TC_EXCEPTION (0x7b) are parsed; the original aborts on
+    both with "Illegal content element type".
+  * float/double values are rendered with Java's exact Double.toString /
+    Float.toString rules (shortest round-trip digits; decimal vs. scientific by
+    magnitude). This matches Java 19+ except for the smallest subnormals (a small
+    cluster near Double/Float.MIN_VALUE), where Java itself does not emit the
+    shortest digits; DeACED's output still round-trips to the identical value.
+  * The field type code for long is labelled "Long - J" (the JVM type code, per
+    JVMS 4.3.2). The original prints "Long - L", which is a typo -- the dumped
+    hex byte, 0x4a, is already ASCII 'J'.
+  * Lone UTF-16 surrogates in string/char values are rendered as '?', so output
+    is always valid UTF-8 (the original could emit an unencodable character).
+  * Structurally-invalid streams (negative array sizes, field/interface counts,
+    or block-data/string lengths) are rejected with a clear error rather than
+    silently producing a misleading partial dump.
+  * Optional byte-offset annotation mode.
+
+The "rebuild" (-b) mode of the original is not (yet) ported.
